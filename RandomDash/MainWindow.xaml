@@ -1,0 +1,56 @@
+﻿<Window x:Class="RandomDash.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        xmlns:local="clr-namespace:RandomDash"
+        mc:Ignorable="d"
+        Title="RandomDash" Height="450" Width="800" Loaded="Window_Loaded" Background="#FFFBFBFB" Icon="random_dash_logo.ico">
+    <Grid x:Name="Grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56"/>
+            <RowDefinition/>
+            <RowDefinition Height="62"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="imageLogo" Margin="0,5" Source="random dash logo full.png" Grid.ColumnSpan="2" MouseDown="imageLogo_MouseDown" Cursor="Hand"/>
+        <Label x:Name="labelDark" Foreground="White" Content="Dark Mode Activated. Made by Jordan Skousen 2020." Grid.RowSpan="9" Grid.ColumnSpan="9" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Hidden"></Label>
+        <Separator Margin="0" VerticalAlignment="Bottom" Background="#7FA0A0A0" Grid.ColumnSpan="2" Height="1"/>
+        <Button x:Name="buttonBack" Background="#FFE81F25" Foreground="White" BorderBrush="#FFE81F25" FontSize="15" Margin="10,10,0,10" HorizontalAlignment="Left" Width="77" Content="&lt; Back" Visibility="Hidden" Click="buttonBack_Click"/>
+        <StackPanel x:Name="panelStart" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <Label x:Name="labelStart" Content="Checking if you're logged in..." HorizontalContentAlignment="Center" FontSize="25" Margin="0,0,0,10"/>
+            <Image x:Name="imageLoadingStart" Width="100" Height="100" />
+            <Button x:Name="buttonStart" Background="#FFE81F25" Foreground="White" BorderBrush="#FFE81F25" Height="59" Width="168" FontSize="35" Content="Go " Cursor="Hand" Click="buttonStart_Click" Visibility="Collapsed"/>
+        </StackPanel>
+        <StackPanel x:Name="panelRefresh" HorizontalAlignment="Center" Margin="0,0,0,3" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Visibility="Hidden">
+            <TextBlock x:Name="textBlockRefresh" FontSize="25" Margin="0,0,0,10" TextAlignment="Center">
+                <Span>
+                    <Run>Would you like to refresh</Run>
+                </Span>
+                <LineBreak/>
+                <Span>
+                    <Run>the list of nearby restaurants?</Run>
+                </Span>
+                <LineBreak/>
+                <Span>
+                    <Run x:Name="runRefreshCount"></Run>
+                </Span>
+            </TextBlock>
+            <Button x:Name="buttonRefreshYes" Background="#FFE81F25" Foreground="White" BorderBrush="#FFE81F25" Height="41" Width="226" FontSize="25" Margin="0,0,0,5" Content="Yes, Refresh" Cursor="Hand" Click="buttonRefreshYes_Click"/>
+            <Button x:Name="buttonRefreshNo" Background="#FFE81F25" Foreground="White" BorderBrush="#FFE81F25" Height="41" Width="226" FontSize="25" Content="No, Continue" Cursor="Hand" Click="buttonRefreshNo_Click"/>
+        </StackPanel>
+        <StackPanel x:Name="panelStatus" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Visibility="Hidden">
+            <Label x:Name="labelStatus" Content="Loading..." HorizontalContentAlignment="Center" FontSize="25" Margin="0,0,0,10"/>
+            <Image x:Name="imageLoading" Width="100" Height="100" />
+        </StackPanel>
+        <WrapPanel x:Name="panelFinish" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Visibility="Hidden">
+            <Button x:Name="buttonNewRest" Background="#FFE81F25" Foreground="White" BorderBrush="#FFE81F25" FontSize="25" Cursor="Hand" Content="New Restaurant" Click="buttonAgain_Click" Width="200" Margin="10,5" Height="50"/>
+            <Button x:Name="buttonNewItem" Background="#FFE81F25" Foreground="White" BorderBrush="#FFE81F25" FontSize="25" Cursor="Hand" Content="New Item" Click="buttonNewItem_Click" Width="200" Margin="0,5,10,5" Height="50"/>
+        </WrapPanel>
+        <CheckBox x:Name="checkboxHood" Content="Under the Hood" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Cursor="Hand" Click="checkboxHood_Click" Visibility="Collapsed"/>
+    </Grid>
+</Window>

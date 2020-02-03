@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RandomDash.exe" version="1.0.0.0" publicKeyToken="eba4246d8d5977b8" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="random_dash_logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RandomDash" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="RandomDash.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RandomDash.exe" size="1927096">
+      <assemblyIdentity name="RandomDash" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XEEdHNkVFgxJsq1Al/f94xaJr61bwGd3Tl1xxVFt//Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XamlAnimatedGif.dll" size="92160">
+      <assemblyIdentity name="XamlAnimatedGif" version="1.2.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>W1rfqINeeCAb5zFjnxCnHCeC7Csv+8Sniv7OtcTsAaw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="random_dash_logo.ico" size="298222">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2ZSg7XG6O4tVy46AwcWZnXuqOW+tZWy4EPkpMvXcMOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="RandomDash.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP\Jordan" issuerKeyHash="09f663544e49f29874efbf8a5dc3f28f7ff2666f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tjHCLlcxRfxf+jxbFbczDjUnMeWvTaus8+IydLPL3ts=</DigestValue></Reference></SignedInfo><SignatureValue>ngbYHZTrTa/fjmuh9AuJV+ianQ3/DKMXJF75Sytr/zdCJik1pgZ571KZRI9gYImNRfxyQucL2rPufAVSzE2HTI/iIgunxCaimTFx6f2iyynjZm6KZS9ilUBzozLjXQq6rC9fEbIyT2atsqZN0V/2AAjNFzGbi3tYEISCrQBY+ok=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sds20JorPRr1ehHT+lg0THUyH9f/5cMz/zkijWO35B3twSuyJ4uRhqfN0mjPAO8679dVYwGFIW8/VlWuIbUtJYz1xD7wLfDCTX3ca7MIAwxbkiOw1Iz5Nkcoz7tgVCWKT3FLfD2+O0p+WJyC+IupymYTuUp+b9OXo6Z4OfTlJAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="dbdecbb37432e2f3acab4dafe53127350e33b7155b3cfa5ffc4531572ec231b6" Description="" Url=""><as:assemblyIdentity name="RandomDash.exe" version="1.0.0.0" publicKeyToken="eba4246d8d5977b8" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP\Jordan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>UrFrQQRqxNhig5U9lrXk8/u5eF79lxuyoVlBBzfR5Nw=</DigestValue></Reference></SignedInfo><SignatureValue>IHmg7yh+esD+3BM3iTxkAk6frg1cysnz3NxSSiIRxX6bROllx0IuUNKYuW/hpZTwcedSL3lFcIGlypEB6Nz+oOjyYgs8lAYd1HEQzQQCqcFS/kJuOdKl9NJl9mRYqxMZ8yhwL/o5uyLbcsoIiOa70Nl7gTBG+OJVnzD1zReV+6o=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sds20JorPRr1ehHT+lg0THUyH9f/5cMz/zkijWO35B3twSuyJ4uRhqfN0mjPAO8679dVYwGFIW8/VlWuIbUtJYz1xD7wLfDCTX3ca7MIAwxbkiOw1Iz5Nkcoz7tgVCWKT3FLfD2+O0p+WJyC+IupymYTuUp+b9OXo6Z4OfTlJAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQPcT3LLWSE5NJsFkSjPhr6TANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwARABFAFMASwBUAE8AUABcAEoAbwByAGQAYQBuMB4XDTIwMDIwMzIxMzUxNVoXDTIxMDIwMzAzMzUxNVowJzElMCMGA1UEAx4cAEQARQBTAEsAVABPAFAAXABKAG8AcgBkAGEAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsds20JorPRr1ehHT+lg0THUyH9f/5cMz/zkijWO35B3twSuyJ4uRhqfN0mjPAO8679dVYwGFIW8/VlWuIbUtJYz1xD7wLfDCTX3ca7MIAwxbkiOw1Iz5Nkcoz7tgVCWKT3FLfD2+O0p+WJyC+IupymYTuUp+b9OXo6Z4OfTlJAECAwEAATANBgkqhkiG9w0BAQsFAAOBgQBrnNeWjPu4hrVC4DZizx6fZVqmoTWc2U96mSYFOmPmCugvClHgzA37nvZA7NucYfgaS9xjJjbrLmozg6zsMeerE2dWgk4geZrvfz9rk9w/cynZ8m8bSZJc2sNix4ciqtBdXOAzpWpCDnyZ3164rzWduJnXzy8B2JlzWsZEI1+QKg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
