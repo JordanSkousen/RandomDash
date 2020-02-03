@@ -1,4 +1,6 @@
 # RandomDash
+![RandomDash logo](random dash logo full.png)
+
 [Here's my blog post for this project.](https://greenlightstudio.net/2020/02/03/introducing-randomdash-get-random-food-from-doordash/)
 
 Hey! You're lazy, right? You get food delivered on DoorDash rather than getting in your car to get it. But you're probably indecisive too. There are hundreds of restaurants on DoorDash and it's hard to decide what to get. This becomes even more complicated when your wife says she's fine with anything (when she really isn't).
