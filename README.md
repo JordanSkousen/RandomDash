@@ -1,5 +1,5 @@
 # RandomDash
-![RandomDash logo][random dash logo full.png]
+![RandomDash logo](https://github.com/JordanSkousen/RandomDash/blob/master/random%20dash%20logo%20full.png)
 
 [Here's my blog post for this project.](https://greenlightstudio.net/2020/02/03/introducing-randomdash-get-random-food-from-doordash/)
 
