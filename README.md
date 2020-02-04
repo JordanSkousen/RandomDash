@@ -7,4 +7,4 @@ Hey! You're lazy, right? You get food delivered on DoorDash rather than getting 
 
 Well, worry no more with RandomDash! RandomDash is a program which will choose a random restaurant for you and also chooses a random dish from their menu. Just log in to DoorDash, click start and watch it do its magic!
 
-[Click here to download it!](https://greenlight-studios.s3-us-west-2.amazonaws.com/RandomDash+Setup.zip)
+[Click here to download the installer!](https://greenlight-studios.s3-us-west-2.amazonaws.com/RandomDash+Installer.zip)
