@@ -203,4 +203,28 @@
   </Target>
   <Import Project="..\packages\CefSharp.Common.79.1.350\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.79.1.350\build\CefSharp.Common.targets')" />
   <Import Project="..\packages\CefSharp.Wpf.79.1.350\build\CefSharp.Wpf.targets" Condition="Exists('..\packages\CefSharp.Wpf.79.1.350\build\CefSharp.Wpf.targets')" />
+  <ItemGroup>
+    <Content Include="$(SolutionDir)packages\cef.redist.x86.79.1.35\CEF\**\*" Exclude="$(SolutionDir)packages\cef.redist.x86.79.1.35\CEF\x86\**\*;$(SolutionDir)packages\cef.redist.x86.79.1.35\CEF\locales\**\*.pak">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(SolutionDir)packages\cef.redist.x86.79.1.35\CEF\**\en-GB.*;$(SolutionDir)packages\cef.redist.x86.79.1.35\CEF\**\en-US.*">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(SolutionDir)packages\cef.redist.x86.79.1.35\CEF\x86\**\*">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(SolutionDir)packages\CefSharp.Common.79.1.350\CefSharp\x86\**\CefSharp.BrowserSubprocess.*">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
 </Project>
